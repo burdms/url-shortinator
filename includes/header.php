@@ -1,5 +1,9 @@
 <?php
-	include "includes/functions.php"
+	include "includes/functions.php";
+
+	$users_count = db_query("SELECT COUNT(id) FROM `users`;")->fetchColumn();
+	$links_count = db_query("SELECT COUNT(original_link) FROM `links`;")->fetchColumn();
+	$views_count = db_query("SELECT SUM(views) FROM `links`;")->fetchColumn();
 ?>
 
 <!doctype html>
