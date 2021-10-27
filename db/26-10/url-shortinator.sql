@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 27, 2021 at 11:22 PM
+-- Generation Time: Oct 27, 2021 at 09:42 PM
 -- Server version: 5.7.29
 -- PHP Version: 7.4.5
 
@@ -34,17 +34,15 @@ CREATE TABLE IF NOT EXISTS `links` (
   `original_link` varchar(250) DEFAULT NULL,
   `short_link` varchar(20) DEFAULT NULL,
   `views` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `short_link` (`short_link`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `links`
 --
 
 INSERT INTO `links` (`id`, `user_id`, `original_link`, `short_link`, `views`) VALUES
-(1, 1, 'https://www.google.com/', 'goo', 60),
-(2, 1, 'https://yandex.ru/', 'yan', 15);
+(1, 1, 'https://www.google.com/', 'srtlnk', 0);
 
 -- --------------------------------------------------------
 
